@@ -97,6 +97,23 @@ public class EjerciciosBasicosJava {
             
         return false;
     }
+    
+    /**
+     * 
+     * @param devuelve true si hay un digito que aparece en los dos números
+     */
+    
+    public boolean digitoIgual (int a, int b){
+        if (a/10 == b / 10 || a % 10 == b % 10){
+            return true;
+        }
+        if (a / 10 == b % 10 || b / 10 == a % 10){
+            return true;
+        }
+        return false;
+    }
+    
+    
     public static void main(String[] args) {
         //creamos un objeto de la clase en la qie estamos (EjerciciosBasicosJava)
         EjerciciosBasicosJava ejercicio = new EjerciciosBasicosJava();
@@ -125,6 +142,11 @@ public class EjerciciosBasicosJava {
         System.out.println(ejercicio.menorPor10(1, 7, 11));
         System.out.println(ejercicio.menorPor10(1, 7, 10));
         System.out.println(ejercicio.menorPor10(11, 1, 7));
+        
+        System.out.println("Ejercicio 06 digitoIgual");
+        System.out.println(ejercicio.digitoIgual(12, 23));
+        System.out.println(ejercicio.digitoIgual(12, 43));
+        System.out.println(ejercicio.digitoIgual(12, 44));
     }
     
 }
