@@ -60,7 +60,8 @@ public class EjerciciosBasicosJava {
     
     /**
      * 
-     * @param args 
+     * @param contesta excepto por las mañanas que solo contestamos si es mi madre
+     * y nunca contestaremos si estamos dormidos
      */
     
     public boolean contesta (boolean matinal, boolean madre, boolean dormido){
@@ -75,6 +76,26 @@ public class EjerciciosBasicosJava {
         }
            
         return true;
+    }
+    
+    /**
+     * 
+     * @param menorPor10 tiene que devolver true si uno de ellos es 10 menos
+     * que uno de los otros
+     */
+    
+    public boolean menorPor10(int a, int b, int c){
+        if (a - b == 10 || a - c == 10){
+            return true;
+        }
+        if (b - a == 10 || b - c == 10){
+            return true;
+        }
+        if ( c - a == 10 || c - b == 10){
+            return true;
+        }
+            
+        return false;
     }
     public static void main(String[] args) {
         //creamos un objeto de la clase en la qie estamos (EjerciciosBasicosJava)
@@ -99,6 +120,11 @@ public class EjerciciosBasicosJava {
         System.out.println(ejercicio.contesta(false, false, false));
         System.out.println(ejercicio.contesta(false, false, true));
         System.out.println(ejercicio.contesta(true, false, false));
+        
+        System.out.println("Ejercicio 05 menorPor10");
+        System.out.println(ejercicio.menorPor10(1, 7, 11));
+        System.out.println(ejercicio.menorPor10(1, 7, 10));
+        System.out.println(ejercicio.menorPor10(11, 1, 7));
     }
     
 }
