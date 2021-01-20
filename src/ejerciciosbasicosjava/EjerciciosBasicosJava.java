@@ -48,7 +48,7 @@ public class EjerciciosBasicosJava {
     /**
      * @param numero el numero a evaluar si es o no vanidoso. es vanidoso si
      * es múltiplo de 11 o uno más de múltiplo de 11
-     * % es el mod (el resto de la división)
+     * % es el mod (el resto de la división) lo que queda de la division
      */
     
     public boolean muyVanidoso (int numero){
