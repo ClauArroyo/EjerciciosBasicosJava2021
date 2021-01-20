@@ -57,6 +57,25 @@ public class EjerciciosBasicosJava {
         }
         return false;
     }
+    
+    /**
+     * 
+     * @param args 
+     */
+    
+    public boolean contesta (boolean matinal, boolean madre, boolean dormido){
+        if (matinal == true){
+            return false;
+        }
+        if (dormido == true){
+            return false;
+        }
+        if (madre == true && matinal == true){
+            return true;
+        }
+           
+        return true;
+    }
     public static void main(String[] args) {
         //creamos un objeto de la clase en la qie estamos (EjerciciosBasicosJava)
         EjerciciosBasicosJava ejercicio = new EjerciciosBasicosJava();
@@ -75,6 +94,11 @@ public class EjerciciosBasicosJava {
         System.out.println(ejercicio.muyVanidoso(22));
         System.out.println(ejercicio.muyVanidoso(23));
         System.out.println(ejercicio.muyVanidoso(24));
+                
+        System.out.println("Ejercicio 04 contesta");
+        System.out.println(ejercicio.contesta(false, false, false));
+        System.out.println(ejercicio.contesta(false, false, true));
+        System.out.println(ejercicio.contesta(true, false, false));
     }
     
 }
