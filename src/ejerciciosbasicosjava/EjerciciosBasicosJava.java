@@ -113,7 +113,21 @@ public class EjerciciosBasicosJava {
         return false;
     }
     
+    /**
+     * 
+     * @param devielve verdadero si un número positivo es múltiplo de 3 ó de 5
+     * pero no de ambos
+     */
     
+    public boolean multiploMultiple (int numero){
+        if (numero % 3 ==0 && numero % 5 ==0){
+            return false;
+        }
+        if (numero % 3 == 0 || numero % 5 == 0){
+            return true;
+        }
+        return false;
+    }
     public static void main(String[] args) {
         //creamos un objeto de la clase en la qie estamos (EjerciciosBasicosJava)
         EjerciciosBasicosJava ejercicio = new EjerciciosBasicosJava();
@@ -147,6 +161,11 @@ public class EjerciciosBasicosJava {
         System.out.println(ejercicio.digitoIgual(12, 23));
         System.out.println(ejercicio.digitoIgual(12, 43));
         System.out.println(ejercicio.digitoIgual(12, 44));
+        
+        System.out.println("Ejercicio 07 multiploMultiple");
+        System.out.println(ejercicio.multiploMultiple(3));
+        System.out.println(ejercicio.multiploMultiple(10));
+        System.out.println(ejercicio.multiploMultiple(15));
     }
     
 }
