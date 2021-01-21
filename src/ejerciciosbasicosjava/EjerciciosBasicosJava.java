@@ -140,6 +140,24 @@ public class EjerciciosBasicosJava {
         }
         return false;
     }
+    
+    /**
+     * 
+     * @param args 
+     */
+    
+    public int loteria (int a, int b, int c){
+       if (a == 2 && b == 2 && c == 2){
+        return 10;
+       }
+       if (a != 2 && a == b && b == c){
+           return 5;
+       }
+       if (b != a && c != a){
+           return 1;
+       }
+        return 0;
+    }
     public static void main(String[] args) {
         //creamos un objeto de la clase en la qie estamos (EjerciciosBasicosJava)
         EjerciciosBasicosJava ejercicio = new EjerciciosBasicosJava();
@@ -183,6 +201,11 @@ public class EjerciciosBasicosJava {
         System.out.println(ejercicio.menos20(18));
         System.out.println(ejercicio.menos20(19));
         System.out.println(ejercicio.menos20(20));
+        
+        System.out.println("Ejercicio 09 loteria");
+        System.out.println(ejercicio.loteria(2, 2, 2));
+        System.out.println(ejercicio.loteria(2, 2, 1));
+        System.out.println(ejercicio.loteria(0, 0, 0));
     }
     
 }
