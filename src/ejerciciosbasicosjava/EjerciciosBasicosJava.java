@@ -128,6 +128,18 @@ public class EjerciciosBasicosJava {
         }
         return false;
     }
+    
+    /**
+     * 
+     * @param args 
+     */
+    
+    public boolean menos20 (int numero){
+        if ( (numero +1) % 20 == 0 || (numero + 2) % 20 == 0){
+            return true;
+        }
+        return false;
+    }
     public static void main(String[] args) {
         //creamos un objeto de la clase en la qie estamos (EjerciciosBasicosJava)
         EjerciciosBasicosJava ejercicio = new EjerciciosBasicosJava();
@@ -166,6 +178,11 @@ public class EjerciciosBasicosJava {
         System.out.println(ejercicio.multiploMultiple(3));
         System.out.println(ejercicio.multiploMultiple(10));
         System.out.println(ejercicio.multiploMultiple(15));
+        
+        System.out.println("Ejercicio 08 menos20");
+        System.out.println(ejercicio.menos20(18));
+        System.out.println(ejercicio.menos20(19));
+        System.out.println(ejercicio.menos20(20));
     }
     
 }
