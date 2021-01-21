@@ -158,6 +158,23 @@ public class EjerciciosBasicosJava {
        }
         return 0;
     }
+    
+    /**
+     * 
+     * @param args 
+     */
+    
+    public int withoutDoubles (int numero1, int numero2, boolean noDoubles){
+        int suma = numero1 + numero2;
+        if (numero1 != numero2){
+            
+            return suma;
+        }
+        if (noDoubles){
+            return suma + 1;
+        }
+        return suma;
+    }
     public static void main(String[] args) {
         //creamos un objeto de la clase en la qie estamos (EjerciciosBasicosJava)
         EjerciciosBasicosJava ejercicio = new EjerciciosBasicosJava();
@@ -206,6 +223,12 @@ public class EjerciciosBasicosJava {
         System.out.println(ejercicio.loteria(2, 2, 2));
         System.out.println(ejercicio.loteria(2, 2, 1));
         System.out.println(ejercicio.loteria(0, 0, 0));
+        
+        System.out.println("Ejercicio 10 withoutDoubles");
+        System.out.println(ejercicio.withoutDoubles(2, 3, true));
+        System.out.println(ejercicio.withoutDoubles(3, 3, true));
+        System.out.println(ejercicio.withoutDoubles(3, 3, false));
+        System.out.println(ejercicio.withoutDoubles(6, 6, true));
     }
     
 }
